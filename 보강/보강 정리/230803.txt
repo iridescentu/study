@@ -1,0 +1,46 @@
+230803 보강
+!! = 중요
+ex) = 예제
+* 구조화된 언어 (Structured Language)
+
+* Hyper Text Mark-up Language (HTML)
+
+* !!들여쓰기 (자식 부모 관계를 잘 보기 위해 가독성을 높여야 함)
+	ㄴ 띄어쓰기 말고 tab 키를 사용해 들여쓰기 하기
+	ex)
+		<아빠>
+			<아들>
+				<손녀>
+				</손녀>
+			</아들>
+			<딸>
+			</딸>
+		</아빠>
+	ex)
+		<h1>제목</h1>
+		<h2>중제목</h2>
+		<h3>소제목</h3>
+		<p>문단</p>
+	ex)
+		<div>어쩌구
+			<span>저쩌구</span>
+		</div>
+
+* 단축키
+	ㄴ 제일 앞에서 shift+end 키를 함께 누르면 제일 앞부터 그 줄의 끝까지 선택이 된다
+	ㄴ 가장 뒤에서 shift+home 키를 함께 누르면 가장 뒤부터 그 줄의 가장 앞쪽까지 선택이 된다
+
+* !!코딩에 쓰이는 모든 폴더, 파일명은 전부 영어/영어+숫자로 쓰기
+* !!만약 폴더에서 index.html 파일이 index까지만 표시되고 뒤의 .html이 보이지 않는다면 폴더 위쪽 탭의 '보기'를 누른 후 오른쪽에 있는 '파일 확장명'을 체크하기
+
+<!doctype HTML> // HTML 5라는 뜻 (doc = document)
+<html lang="ko" // lang = language ko = korean 만약 영어권 사람들을 위한 html을 만들 때는 "ko" 대신 "en"을 사용하면 됨
+	<head> // html의 자식은 head로 정해져 있다
+		<title>Hello world!</title> // title은 head의 자식으로 정해져 있다. 이 title의 이름은 웹페이지 가장 위, 브라우저 탭에 표시된다
+		<meta name="author" content=""/> //meta 태그는 닫을 필요가 없는 태그이기 때문에 </>의 형태로 닫고 왼쪽의 형태로 정해져 있다. author는 제작자를 의미하기에 내가 코드를 작성한다면 내 이름을 적으면 된다
+	</head>
+	<body>  // 역시 body도 html의 자식으로 정해져 있다
+
+	</body>
+</html>
+ 

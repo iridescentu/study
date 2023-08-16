@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div{
+    display: inline-block;
+    background-color: deepskyblue;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 1 1 auto; /* 위의 세 flex들을 순서대로 flex 값에 넣어 준 것 */
+    width: 200px;
+    height: 200px;
+}
+.container > div:nth-child(2){
+    background-color: deeppink;
+}
+
+.container > div:nth-child(3){
+    background-color: darkorange;
+    flex: 2 2 auto; /* 17 번째 줄의 flex는 1 1 auto인 반면 현재 줄의 flex는 2 2 auto이니까 세 박스 중 앞의 두 박스는 1배, 마지막 세 번째 박스는 2배 */
+}

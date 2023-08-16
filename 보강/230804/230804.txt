@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html lang="ko"
+	<head>
+		<meta charset="utf-8" /> **unicode 8을 쓰겠다는 태그, 필수 태그임**
+		<meta name="viewport" content-"width=device-width, initial-scal=1" /> **모바일에서도 호환이 되도록 넣는 태그**
+		<meta name="author" content="제작자 이름 or 웹페이지를 기업에 팔았다면 기업 이름" />
+		<meta name="keywords" content="웹페이지의 키워드" />
+		<meta name="description" content="웹페이지에 대한 설명" />
+		<meta property="og:title" content="og는 예시를 들자면 카카오톡에 링크를 첨부했을 때 링크 아래에 미리보기가 뜨는데 그 미리보기를 Open Graph(og) 라고 한다" />
+		<meta property="og:image" content="og에 사용될 이미지.이미지파일명(jpg or png)" />
+		<meta property="og:description" content="og에 사용될 설명" />
+		<link rel="stylesheet" href="style.css" /> css **파일에 연결해 주는 태그**
+		<link rel="icon, shortcut" href="favicon.ico" /> **페이지 탭에 표시되는 아이콘**
+	</head>
+	<body>
+		<a href="http://naver.com">이 글씨를 누르면 네이버로 이동되는 링크 태그입니다</a>
+		<img src="image/dog.jpg" />
+	</body>
+</html>
+
+** href와 src를 구분하는 방법
+	- href는 어디에 있다라고 얘기만 할 때
+	- src는 직접 가지고 와서 보여 줘야 할 때
+
+** 대제목은 h1 태그보다 h2 태그를 사용한다
+	- 대부분의 웹사이트를 보면 왼쪽 상단에 페이지 로고가 있는데 그 로고를 h1으로 사용하기 때문에

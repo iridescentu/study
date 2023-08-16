@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+section {
+    margin: 1rem;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* 정렬 방향. row가 가로라는 뜻이기 때문에 가로로 정렬.
+    column은 세로라는 뜻이기 때문에 column을 사용하면 세로로 정렬됨 */
+    background-color: rgb(255, 222, 226);
+}
+
+/* 짝수인 자식 요소들은 이미지와 텍스트 순서가 바뀌도록 */
+section:nth-child(even){
+    flex-direction: row-reverse;
+    background-color: gray;
+}
+
+figure {
+    /* flex: grow(확장) shrink(축소) basis(width) */
+    flex: 1 1 50%;
+    height: 100%;
+    padding: 2rem; /* 이미지와 배경의 간격을 줌 */
+    
+}
+
+.content{
+    flex: 1 1 0;
+    font-size: 15px;
+    padding: 2rem; /* 이미지와 텍스트 사이의 간격을 줌 */
+}
+
+.content h2{
+    font-size: 25px;
+}
+
+.content p{
+    font-size: 15px;
+}

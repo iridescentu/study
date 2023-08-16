@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    gap: 1rem; /* 이미지 사이에 갭을 적용하기 위해 */
+    padding: 1rem;
+}
+/* 앞에 .이 붙고 안 붙고의 차이는 .이 붙으면 class, 안 붙으면 tag */
+
+figure{
+    flex: 1 1 0;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* 15-17은 빈틈 제거와 크기 맞추기 위함 */
+    border-radius: 200px; /* 이미지를 동그랗게 만들기 위해 */
+    cursor: pointer; /* 마우스 커서를 올리면 커서가 포인터로 변하도록 */
+    transition: all 200ms ease; /* 애니메이션 효과가 부드럽게 나타나도록 (0.2초) */
+}
+
+figure.active{
+    flex: 3 1 0;
+}
+
+figure.active img{
+    filter: blur(0px); /* 이미지에 마우스를 올리면 호버 효과가 적용되어 10px 블러 처리 되어 있던 이미지가 블러 0으로 적용됨 */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 크기를 맞추기 위해 */
+    filter: blur(10px); /* 이미지가 처음엔 10px로 블러 처리가 되어 있음, 블러 효과 말고도 세피아나 그레이스케일처럼 다양한 필터 효과들이 있음 */
+}

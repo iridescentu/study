@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:lightskyblue;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.mouse{
+    position: fixed;
+    width: 100px;
+    height: 200px;
+    z-index: 100;
+    border: 3px solid lemonchiffon;
+    border-radius: 100px;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    background-color:lemonchiffon;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    animation: pingpong 2s infinite ease-in-out;
+}
+
+@keyframes pingpong {
+    0%{ /* 아래쪽이 0% */
+        bottom: 160px;
+        opacity: 0.2;
+    }
+    100%{ /* 위쪽이 100% */
+        bottom: 5px;
+    }
+}

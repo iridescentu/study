@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/catttt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before{
+    position: absolute;
+    content: '';
+    background: linear-grdient(transparent, rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    color: white;
+    z-index: 10;
+    width: 50%;
+    text-align: center;
+}
+
+.mouse{
+    position: fixed;
+    bottom: 50px;
+    width: 30px;
+    height: 60px;
+    z-index: 100;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+
+.dot{ /* 움직이고 있는 동그라미 */
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* dot은 mouse라는 박스 안에 담겨져 있는데 mouse라는 박스의 모서리가 둥글게 되어 있어도
+    코드 내에서는 박스로 인식하기 때문에 왼쪽으로 50, 그러니까 -50%을 적용해 준 것
+    그래프를 생각하면 쉽다 0을 기준으로 왼쪽이 - 오른쪽이 +이기 때문에 */
+    border-radius: 0.5rem;
+    animation: pingpong 1s infinite alternate ease-in-out;
+}
+
+@keyframes pingpong {
+    0%{
+        bottom: 5px;
+    }
+    100%{
+        bottom: 40px;
+    }
+}

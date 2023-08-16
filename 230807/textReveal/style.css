@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #title{
+    opacity: 0;
+    display: none;
+} */
+
+#title span{
+    opacity: 0;
+}
+
+.reveal{
+    animation: reveal 1s forwards linear;
+}
+
+@keyframes reveal {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

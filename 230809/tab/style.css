@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(255, 255, 225);
+}
+
+.tab{
+    width: 800px;
+    margin: 1rem auto 0; /* 가운데 정렬 */
+    background-color: rgb(255, 226, 231);
+}
+
+.tab-list{
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-button{
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: rgb(199, 232, 252);
+    user-select: none;
+}
+
+.tab-button.selected{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.tab-content{
+    width: 100%;
+    position: relative;
+}
+
+.tab-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 202, 202);
+    color: rgb(71, 71, 71);
+    opacity: 0; /* tab-item에서 opacity를 0으로 줘야 아이템들이 겹치지 않고 보일 수 있음 */
+}
+
+.tab-item.show{
+    opacity: 1;
+}

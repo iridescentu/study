@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.youtube{
+    /* overflow: hidden;
+    position: relative; */
+    aspect-ratio: 16/9;
+}
+
+.youtube iframe{
+    width: 100%;
+    height: 100%;
+}
